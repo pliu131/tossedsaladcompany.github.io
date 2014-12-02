@@ -1,0 +1,279 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+html, body {
+    height: 100%;
+    background: url(http://subtlepatterns.com/patterns/seamless_paper_texture.png);
+    background-repeat: repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+p {
+    line-height: 2.8rem;
+    letter-spacing: 0.02rem;
+    font-size: 1.6rem;
+}
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* Custom Navbar Styles*/
+.navbar.navbar-default {
+    margin-bottom: 0;
+    background-color: white;
+    border: none;
+}
+
+.navbar.navbar-default .container {
+    height: 100px;
+}
+
+.navbar-header, .navbar-nav {
+    height: 100px;
+}
+
+.navbar-nav > li {
+    font-family: 'Permanent Marker', cursive !important;
+    font-size: 1.8rem;
+    padding: 2.25rem 1.5rem;
+    
+}
+
+
+
+/* Team Page Styles */
+.img-wrapper {
+    height: 400px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content {
+    padding: 1rem;
+}
+
+.team_member {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255,255,255,0.75);
+}
+
+
+.team_member {
+    padding: 0;
+}
+.team_member .team_image {
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 100%;
+}
+
+.team_bio {
+    padding: 1.5rem;
+}
+
+.team_bio h2,
+.team_bio h3 {
+    margin-top: 0;
+}
+
+.team_bio h2 {
+    color: #1c7a55;
+}
+
+.team_bio h3 {
+    color: #e8b659;
+}
+
+/*About Page Styles*/
+
+.value-prop {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(255,255,255, 0.75);
+    color: rgb(50,50,50);
+    padding-top: 1.5rem;
+}
+
+.value-prop p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .value-prop h2 {
+        margin: 0;
+    }
+    
+    .value-prop p {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .value-prop {
+        height: 0;
+        padding: 0;
+        padding-bottom: 100%;
+    }
+    
+    .value-prop h2 {
+        padding-top: 3rem;
+    }
+    
+    .value-prop p {
+        margin-top: 1.5rem;
+    }
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.window-50 {
+    height: 50%;
+    text-align: center;
+}
+
+.window > .container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about-main h1,
+.about-main h2 {
+    color: white;
+}
+
+.about-main p {
+    color: rgb(225,225,225);
+}
+
+.about-value-props {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.about-value-props h1 {
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-value-props .overlay {
+    position: relative
+}
+
+/* Typography Styles */
+h1.large {
+    font-size: 5.2rem;
+}
+
+h2.large {
+    font-size: 4.4rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #1C7A55;
+    border: none;
+}
+
+.carousel-inner .item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+    background-color: orange;
+    border-radius: 50% 50%;
+}
+
+.social-links {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    margin-right: 50px;
+    float: right;
+    
+}
+
+.social-links li {
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+    padding: 5px;
+}
+
+@media screen and (min-width: 992px) {
+    .main-value-prop {
+        height: 475px
+    }
+}
+
+.navbar-collapse {
+    position: relative; 
+    z-index: 1000; 
+    background-color: white;
+}
+
+.navbar-nav {
+    height: auto;
+}
+
+.navbar-brand {
+    position: relative;
+    z-index: 1500;
+}
